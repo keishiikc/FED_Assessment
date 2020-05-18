@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carousel</title>
+	<link rel="stylesheet" type="text/css" href="main page.css">
+</head>
+<body>
+	<div class="title-bar">
+		<h1>Sample Site</h1>
+		<h6 ID="cartnotif" class="cartitems"> 0 </h6>
+		<img ID="cart-icon" width="40px" height="40px" src="https://image.flaticon.com/icons/png/512/126/126083.png"> </img>
+		
+	</div>
+<hr>
+
+<!-- MODAL-->
+<div ID="myModal" class="modal">
+	<div class="mcontent">
+		<span class="close">&times;</span>
+		<p>Welcome to your cart!</p>
+			<ol ID="cartList">
+			</ol>
+	</div>
+</div>
+<!--
+	<div class="main-display">
+			<img ID="arrowleft" width="30vw" src="https://image.flaticon.com/icons/svg/271/271218.svg" onclick="plusSlides(-1)"> </img>
+		<div class="product-description">
+			 <!-- 1 
+			<div id = "phone1" class="productitemdisplay fade">
+				<h2>iPhone 11 Pro Max</h2>
+				<h3>The iPhone 11 Pro Max is currently sold at $ 1,099.00 </h3>
+				<button class ="buybutton" ID="buybutton1">BUY NOW</button>
+			</div>
+			<!--  2 
+			<div id = "phone2" class="productitemdisplay fade">
+				<h2>iPhone 11 Pro</h2>
+				<h3>The iPhone 11 Pro is currently sold at $ 999.00 </h3>
+				<button class ="buybutton" ID="buybutton2">BUY NOW</button>
+			</div>
+			<!-- 3 
+			<div id = "phone3" class="productitemdisplay fade">
+				<h2>iPhone 11 Pro Max</h2>
+				<h3>The iPhone 11  is currently sold at $ 699.00 </h3>
+				<button class ="buybutton" ID="buybutton3">BUY NOW</button>
+			</div>
+			<!-- 4 
+			<div id = "phone4" class="productitemdisplay fade">
+				<h2>iPhone 11 Pro Max</h2>
+				<h3>The iPhone XR is currently sold at $ 599.00 </h3>
+				<button class ="buybutton" ID="buybutton4">BUY NOW</button>
+			</div>
+			<!-- 5 
+			<div id = "phone5" class="productitemdisplay fade">
+				<h2>iPhone 11 Pro Max</h2>
+				<h3>The iPhone X is currently sold at $ 780.00 </h3>
+				<button class ="buybutton" ID="buybutton5">BUY NOW</button>
+			</div>
+			<!-- 6 
+			<div id = "phone6" class="productitemdisplay fade">
+				<h2>iPhone 11 Pro Max</h2>
+				<h3>The iPhone 7 is currently sold at $ 549.00 </h3>
+				<button class ="buybutton" ID="buybutton6">BUY NOW</button>
+			</div>
+		</div>
+	-->
+	<!-- PHOTOS-->
+		<div class="carousel">
+			<div class="product-display info">
+			<img id="img1" class="fade" width="250vw" src="https://images-na.ssl-images-amazon.com/images/I/61GrgdX5AVL._AC_SY550_.jpg"></img>
+			<h2>iPhone 11 Pro Max</h2>
+			<h3>The iPhone 11 Pro Max is currently sold at $ 1,099.00 </h3>
+			</div>
+			<div class="product-display info">
+				<img id="img2" class="fade" width="250vw" src="https://cdn.tmobile.com/content/dam/t-mobile/en-p/cell-phones/apple/Apple-iPhone-11-Pro-Max/Midnight-Green/Apple-iPhone-11-Pro-Max-Midnight-Green-frontimage.jpg"></img>
+			<h2>iPhone 11 Pro</h2>
+			<h3>The iPhone 11 Pro is currently sold at $ 999.00 </h3>
+			</div>
+			<div class="product-display info">
+				<img id="img3" class="fade" width="250vw" src="https://ss7.vzw.com/is/image/VerizonWireless/Apple_iPhone_11_Red_09102019?$png8alpha256$&hei=520"></img>
+				<h2>iPhone 11</h2>
+				<h3>The iPhone 11 is currently sold at $ 699.00 </h3>
+			</div>
+			<div class="product-display info">
+			<img id="img4" class="fade" width="250vw" src="https://images.macrumors.com/t/zHx9qHKmGf8pSoAFD-9Dt2Rk3Ks=/800x0/article-new/2018/09/littleiphonexr.jpg"></img>
+			<h2>iPhone XR</h2>
+			<h3>The iPhone XR is currently sold at $ 599.00 </h3>
+			</div>
+			<div class="product-display info">
+				<img id="img5" class="fade" width="250vw" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/refurb-iphoneX-silver_FMT_WHH?wid=182&hei=214&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1546626276301"></img>
+				<h2>iPhone X</h2>
+				<h3>The iPhone X is currently sold at $ 780.00 </h3>
+			</div>
+			<div class="product-display info">
+				<img id="img6" class="fade" width="250vw" src="https://images-na.ssl-images-amazon.com/images/I/61CvAFp0GKL._AC_SL1500_.jpg"></img>
+				<h2>iPhone 7</h2>
+				<h3>The iPhone X is currently sold at $ 549.00 </h3>
+			</div>
+			
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		  </div>
+<!-- 
+		<img ID="arrow-right" width="30vw" src="https://image.flaticon.com/icons/svg/271/271226.svg" onclick="plusSlides(1)"></img>
+	</div>
+-->
+
+<!-- PRODUCT LIST -->
+	<div class="product-list">
+		<div class="item" ID="promax11">
+			<img height=150px width=100px src="https://images-na.ssl-images-amazon.com/images/I/61GrgdX5AVL._AC_SY550_.jpg"></img>
+			<div class="item-overview">
+			<h4>iPhone 11 Pro Max</h4>
+				<div class="price">
+					<h5>$ 1,099.00</h5>
+					<button id ="order1" class="order-button">Order</button>
+					<p class="js1"></p>
+				</div>
+			</div>
+		</div>
+		<div class="item" ID="pro11">
+			<img height=150px src="https://cdn.tmobile.com/content/dam/t-mobile/en-p/cell-phones/apple/Apple-iPhone-11-Pro-Max/Midnight-Green/Apple-iPhone-11-Pro-Max-Midnight-Green-frontimage.jpg"></img>
+			<h4>iPhone 11 Pro</h4>
+				<div class="price">
+					<h5>$ 999.00 </h5>
+					<button id ="order2" class="order-button">Order</button>
+				</div>
+		</div>
+		<div class="item" ID="phone11">
+			<img height=130px width=100px src="https://ss7.vzw.com/is/image/VerizonWireless/Apple_iPhone_11_Red_09102019?$png8alpha256$&hei=520"></img>
+			<div class="item-overview">
+				<h4>iPhone 11</h4>
+				<div class="price">
+					<h5>$ 699.00</h5>
+					<button id ="order3" class="order-button">Order</button>
+				</div>
+			</div>
+		</div>
+		<div class="item" ID="phone10xr">
+			<img height=150px width=100px src="https://images.macrumors.com/t/zHx9qHKmGf8pSoAFD-9Dt2Rk3Ks=/800x0/article-new/2018/09/littleiphonexr.jpg"></img>
+			<div class="item-overview">
+				<h4>iPhone XR</h4>
+				<div class="price">
+					<h5>$ 599.00</h5>
+					<button id ="order4" class="order-button">Order</button>
+				</div>
+			</div>
+		</div>
+		<div class="item" ID="iphonex">
+			<img height=140px width=120px src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/refurb-iphoneX-silver_FMT_WHH?wid=182&hei=214&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1546626276301"></img>
+			<div class="item-overview">
+				<h4>iPhone X</h4>
+				<div class="price">
+					<h5>$ 780.00</h5>
+					<button id ="order5" class="order-button">Order</button>
+				</div>
+			</div>
+		</div>
+		<div class="item" ID="iphone7">
+			<img height=150px width=100px src="https://images-na.ssl-images-amazon.com/images/I/61CvAFp0GKL._AC_SL1500_.jpg"></img>
+			<div class="item-overview">
+				<h4>iPhone 7</h4>
+				<div class="price">
+					<h5>$ 549.00</h5>
+					<button id ="order6" class="order-button">Order</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- JAVASCRIPT-->
+<script type="text/JAVASCRIPT" src="main page.js">
+</script>
+</body>
+</html>
